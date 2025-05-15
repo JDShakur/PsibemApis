@@ -449,7 +449,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
       await _auth.currentUser?.reauthenticateWithCredential(credential);
 
       // Exclui da API local
-      await _apiService.deleteUser(_uid);
+      //await _apiService.deleteUser(_uid);
 
       // Exclui do Firestore
       await _firestore.collection('usuarios').doc(_uid).delete();
