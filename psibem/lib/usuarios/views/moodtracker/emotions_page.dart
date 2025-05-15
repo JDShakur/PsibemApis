@@ -93,7 +93,7 @@ class _CalendarioState extends State<Calendario> {
       await prefs.setString(
           'emocoes_personalizadas', jsonEncode(emocoesPersonalizadas));
 
-      // Salva humores (convertendo DateTime para String como chave)
+      // Salva humores
       final humoresMap = <String, String>{};
       _moods.forEach((key, value) {
         humoresMap[key.toString()] = value;
@@ -113,18 +113,6 @@ class _CalendarioState extends State<Calendario> {
     }
   }
 
-  Future<void> _limparDados() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove('emocoes_personalizadas');
-    await prefs.remove('humores');
-    await prefs.remove('autoestima');
-    setState(() {
-      _moods.clear();
-      _autoestima.clear();
-      emocoesPersonalizadas.clear();
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,12 +128,12 @@ class _CalendarioState extends State<Calendario> {
       body: Stack(
         children: [
           Positioned(
-            top: -90,
+            top: -50,
             left: 0,
             right: 0,
             child: Container(
-              width: 230,
-              height: 300,
+              width: 397,
+              height: 200,
               clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
                 color: const Color(0xFF81C7C6),
@@ -185,7 +173,7 @@ class _CalendarioState extends State<Calendario> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 120),
+            padding: const EdgeInsets.only(top: 70),
             child: Column(
               children: [
                 Expanded(
@@ -210,7 +198,7 @@ class _CalendarioState extends State<Calendario> {
                         focusedDay: _focusedDay,
                         calendarFormat: _calendarFormat,
                         availableCalendarFormats: const {
-                          CalendarFormat.month: 'Mês'
+                          CalendarFormat.month: 'Mês',
                         },
                         headerStyle: const HeaderStyle(
                           formatButtonVisible: false,
@@ -238,7 +226,14 @@ class _CalendarioState extends State<Calendario> {
                             _selectedDay = selectedDay;
                             _focusedDay = focusedDay;
                           });
-                          _showMoodDialog(selectedDay);
+
+                          // Verifica se o dia selecionado é o dia atual
+                          if (isSameDay(selectedDay, DateTime.now())) {
+                            _showMoodDialog(selectedDay);
+                          } else {
+                            // Mostra apenas os dados salvos para dias passados
+                            _showMoodViewDialog(selectedDay);
+                          }
                         },
                         onFormatChanged: (format) {
                           setState(() {
@@ -249,49 +244,41 @@ class _CalendarioState extends State<Calendario> {
                           _focusedDay = focusedDay;
                         },
                         calendarStyle: const CalendarStyle(
-                            todayTextStyle: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'HelveticaNeue',
-                              height: 400,
-                              color: Colors.white,
-                            ),
-                            defaultDecoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.transparent,
-                            ),
-                            markerDecoration: BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                            ),
-                            todayDecoration: BoxDecoration(
-                              color: Color(0xFF81C7C6),
-                              shape: BoxShape.circle,
-                            ),
-                            selectedTextStyle: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'HelveticaNeue',
-                              color: Colors.white,
-                            ),
-                            selectedDecoration: BoxDecoration(
-                              color: Color(0xFF208584),
-                              shape: BoxShape.circle,
-                            ),
-                            weekendTextStyle: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'HelveticaNeue',
-                              color: Color.fromARGB(255, 255, 192, 187),
-                            ),
-                            defaultTextStyle: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'HelveticaNeue',
-                              color: Colors.black,
-                            ),
-                            outsideTextStyle: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'HelveticaNeue',
-                              color: Colors.grey,
-                            ),
-                            cellMargin: EdgeInsets.all(10)),
+                          todayTextStyle: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'HelveticaNeue',
+                            color: Colors.white,
+                          ),
+                          todayDecoration: BoxDecoration(
+                            color: Color(0xFF81C7C6),
+                            shape: BoxShape.circle,
+                          ),
+                          selectedTextStyle: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'HelveticaNeue',
+                            color: Colors.white,
+                          ),
+                          selectedDecoration: BoxDecoration(
+                            color: Color(0xFF208584),
+                            shape: BoxShape.circle,
+                          ),
+                          weekendTextStyle: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'HelveticaNeue',
+                            color: Color.fromARGB(255, 255, 192, 187),
+                          ),
+                          defaultTextStyle: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'HelveticaNeue',
+                            color: Colors.black,
+                          ),
+                          outsideTextStyle: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'HelveticaNeue',
+                            color: Colors.grey,
+                          ),
+                          cellMargin: EdgeInsets.all(10),
+                        ),
                         daysOfWeekStyle: const DaysOfWeekStyle(
                           weekdayStyle: TextStyle(
                             fontSize: 10,
@@ -307,35 +294,18 @@ class _CalendarioState extends State<Calendario> {
                         calendarBuilders: CalendarBuilders(
                           defaultBuilder: (context, day, focusedDay) {
                             final mood = _moods[day];
-
-                            return Container(
-                              margin: const EdgeInsets.all(4),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: mood != null
-                                    ? _emojiColors[mood.split(' ')[0]]
-                                        ?.withOpacity(0.3)
-                                    : null,
-                              ),
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      day.day.toString(),
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        color:
-                                            mood != null ? Colors.black : null,
-                                      ),
-                                    ),
-                                    if (mood != null)
-                                      Text(
-                                        mood.split(' ')[0],
-                                        style: const TextStyle(fontSize: 12),
-                                      ),
-                                  ],
+                            if (mood != null) {
+                              return Center(
+                                child: Text(
+                                  mood.split(' ')[0],
+                                  style: const TextStyle(fontSize: 18),
                                 ),
+                              );
+                            }
+                            return Center(
+                              child: Text(
+                                day.day.toString(),
+                                style: const TextStyle(fontSize: 18),
                               ),
                             );
                           },
@@ -346,43 +316,29 @@ class _CalendarioState extends State<Calendario> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => MonitoramentoPage(
-                                moods: _moods,
-                                autoestima: _autoestima,
-                                emocoesPersonalizadas: emocoesPersonalizadas,
-                              ),
-                            ),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(55),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MonitoramentoPage(
+                            moods: _moods,
+                            autoestima: _autoestima,
+                            emocoesPersonalizadas: emocoesPersonalizadas,
                           ),
                         ),
-                        child: const Icon(Icons.bar_chart,
-                            size: 50, color: Color(0xFF81C7C6)),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(55),
                       ),
-                      const SizedBox(width: 20),
-                      ElevatedButton(
-                        onPressed: _limparDados,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.red,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(55),
-                          ),
-                        ),
-                        child: const Icon(Icons.delete,
-                            size: 50, color: Colors.white),
-                      ),
-                    ],
+                    ),
+                    child: const Icon(
+                      Icons.bar_chart,
+                      size: 50,
+                      color: Color(0xFF81C7C6),
+                    ),
                   ),
                 ),
               ],
@@ -416,13 +372,11 @@ class _CalendarioState extends State<Calendario> {
                     right: 0,
                     child: IconButton(
                       icon: const Icon(Icons.close, color: Color(0xFF208584)),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
+                      onPressed: () => Navigator.pop(context),
                     ),
                   ),
                   SizedBox(
-                    width: double.maxFinite,
+                    width: 250,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -476,14 +430,17 @@ class _CalendarioState extends State<Calendario> {
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                            content: Text('Selecione pelo menos uma opção.')),
+                          content: Text('Selecione pelo menos uma opção.'),
+                        ),
                       );
                     }
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF208584),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 15),
+                      horizontal: 30,
+                      vertical: 15,
+                    ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -501,6 +458,94 @@ class _CalendarioState extends State<Calendario> {
               ],
             );
           },
+        );
+      },
+    );
+  }
+
+  void _showMoodViewDialog(DateTime day) {
+    final mood = _moods[day];
+    final autoestima = _autoestima[day];
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          backgroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          contentPadding:
+              const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
+          content: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                right: 0,
+                child: IconButton(
+                  icon: const Icon(Icons.close, color: Color(0xFF208584)),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ),
+              SizedBox(
+                width: 250,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      'Seu mood em ${day.day}/${day.month}/${day.year}',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'HelveticaNeue',
+                        color: Color(0xFF208584),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    if (mood != null)
+                      Text(
+                        'Humor: $mood',
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                    if (autoestima != null)
+                      Text(
+                        'Autoestima: $autoestima',
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                    if (mood == null && autoestima == null)
+                      const Text(
+                        'Nenhum dado registrado para este dia',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            ElevatedButton(
+              onPressed: () => Navigator.pop(context),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF208584),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 15,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              child: const Text(
+                'Fechar',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'HelveticaNeue',
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
         );
       },
     );
@@ -540,10 +585,7 @@ class _CalendarioState extends State<Calendario> {
               color: const Color.fromARGB(255, 253, 226, 224),
               alignment: Alignment.centerRight,
               padding: const EdgeInsets.only(right: 20),
-              child: const Icon(
-                Icons.delete,
-                color: Colors.white,
-              ),
+              child: const Icon(Icons.delete, color: Colors.white),
             ),
             onDismissed: (direction) {
               _removerEmocao(emocao);
@@ -553,8 +595,10 @@ class _CalendarioState extends State<Calendario> {
                 Text('${emocao['emoji']} ${emocao['humor']}'),
                 const Spacer(),
                 IconButton(
-                  icon: const Icon(Icons.edit,
-                      color: Color.fromARGB(255, 155, 156, 156)),
+                  icon: const Icon(
+                    Icons.edit,
+                    color: Color.fromARGB(255, 155, 156, 156),
+                  ),
                   onPressed: () => _editarEmocao(emocao),
                 ),
                 IconButton(
@@ -582,7 +626,9 @@ class _CalendarioState extends State<Calendario> {
   }
 
   Widget _buildAutoestimaDropdown(
-      String? selectedAutoestima, Function(String?) onChanged) {
+    String? selectedAutoestima,
+    Function(String?) onChanged,
+  ) {
     return DropdownButton<String>(
       value: selectedAutoestima,
       hint: const Text('Escolha sua autoestima'),
@@ -601,8 +647,9 @@ class _CalendarioState extends State<Calendario> {
     String? initialHumor,
     String? initialEmoji,
   }) async {
-    final TextEditingController controller =
-        TextEditingController(text: initialHumor);
+    final TextEditingController controller = TextEditingController(
+      text: initialHumor,
+    );
     String? emojiSelecionado = initialEmoji;
 
     return showDialog<Map<String, dynamic>>(
@@ -616,7 +663,11 @@ class _CalendarioState extends State<Calendario> {
                 borderRadius: BorderRadius.circular(20),
               ),
               contentPadding: const EdgeInsets.only(
-                  top: 20, left: 20, right: 20, bottom: 10),
+                top: 20,
+                left: 20,
+                right: 20,
+                bottom: 10,
+              ),
               content: Stack(
                 children: [
                   Positioned(
@@ -624,9 +675,7 @@ class _CalendarioState extends State<Calendario> {
                     right: 0,
                     child: IconButton(
                       icon: const Icon(Icons.close, color: Color(0xFF208584)),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
+                      onPressed: () => Navigator.pop(context),
                     ),
                   ),
                   SizedBox(
@@ -674,8 +723,10 @@ class _CalendarioState extends State<Calendario> {
                                     width: 2,
                                   ),
                                 ),
-                                child: Text(emoji,
-                                    style: const TextStyle(fontSize: 24)),
+                                child: Text(
+                                  emoji,
+                                  style: const TextStyle(fontSize: 24),
+                                ),
                               ),
                             );
                           }).toList(),
@@ -691,13 +742,14 @@ class _CalendarioState extends State<Calendario> {
                     if (controller.text.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                            content:
-                                Text('Por favor, insira um humor válido.')),
+                          content: Text('Por favor, insira um humor válido.'),
+                        ),
                       );
                     } else if (emojiSelecionado == null) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                            content: Text('Por favor, selecione um emoji.')),
+                          content: Text('Por favor, selecione um emoji.'),
+                        ),
                       );
                     } else {
                       Navigator.pop(context, {
@@ -709,7 +761,9 @@ class _CalendarioState extends State<Calendario> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF208584),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 15),
+                      horizontal: 30,
+                      vertical: 15,
+                    ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
