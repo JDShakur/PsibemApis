@@ -450,7 +450,7 @@ class _CompartilhamentoPageState extends State<CompartilhamentoPage> {
                   padding: EdgeInsets.only(
                     bottom: MediaQuery.of(context).viewInsets.bottom,
                   ),
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.9,
                     child: TermsOfUseContent(), 
                   ),

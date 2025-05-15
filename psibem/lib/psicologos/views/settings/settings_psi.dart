@@ -26,7 +26,6 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
   String _sexo = '';
   bool _notificacoesAtivadas = true;
   bool _isLoading = false;
-  bool _visibilidadePerfil = false;
 
   // Lista de especialidades com estados de seleção
   final Map<String, bool> _especialidades = {
@@ -89,7 +88,12 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
           _telefone = data['telefone'] ?? '';
           _sexo = data['sexo'] ?? '';
           _dataNascimento = data['data'] ?? data['dataNascimento'] ?? '';
-          _visibilidadePerfil = data['visibilidadePerfil'] ?? false;
+          _notificacoesAtivadas = data['notificacoesAtivadas'] ?? true;
+          _especialidades['Psicanálise'] =
+              data['especialidades']['Psicanálise'] ?? false;
+          _especialidades['Terapia Cognitivo-Comportamental'] =
+              data['especialidades']['Terapia Cognitivo-Comportamental'] ??
+                  false;
 
           // Carrega especialidades se existirem
           if (data['especialidades'] != null) {
@@ -149,7 +153,6 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
         'dataNascimento':
             _dataNascimento.isNotEmpty ? _dataNascimento : 'Sem data',
         'sexo': _sexo.isNotEmpty ? _sexo : 'Sem informação',
-        'visibilidadePerfil': _visibilidadePerfil,
         'especialidades': _especialidades,
         'ultimaAtualizacao': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
@@ -547,7 +550,7 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
       await _auth.currentUser?.reauthenticateWithCredential(credential);
 
       // Exclui da API local
-      await _apiService.deleteUser(_uid);
+      // await _apiService.deleteUser(_uid);
 
       // Exclui do Firestore
       await _firestore.collection('usuarios').doc(_uid).delete();
@@ -721,29 +724,6 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
                         setState(() => _notificacoesAtivadas = value),
                     activeColor: const Color(0xFF81C7C6),
                   ),
-
-                  SwitchListTile(
-                    title: const Text('Perfil visível para pacientes'),
-                    value: _visibilidadePerfil,
-                    onChanged: (value) async {
-                      setState(() => _visibilidadePerfil = value);
-                      try {
-                        await _firestore
-                            .collection('usuarios')
-                            .doc(_uid)
-                            .update({
-                          'visibilidadePerfil': value,
-                          'ultimaAtualizacao': FieldValue.serverTimestamp(),
-                        });
-                      } catch (e) {
-                        if (mounted) {
-                          _showErrorSnackbar(
-                              'Erro ao atualizar visibilidade: $e');
-                        }
-                      }
-                    },
-                    activeColor: const Color(0xFF81C7C6),
-                  ),
                   const Divider(),
 
                   ListTile(
@@ -778,7 +758,7 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
                                           .viewInsets
                                           .bottom,
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.9,

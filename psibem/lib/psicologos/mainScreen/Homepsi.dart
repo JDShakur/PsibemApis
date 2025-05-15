@@ -236,7 +236,7 @@ class _HomePagePsicologoState extends State<HomePagePsicologo> {
             );
                 },
               );
-            }).toList(),
+            }),
         ],
       ),
     );

@@ -515,7 +515,7 @@ class _CadastroPsiState extends State<CadastroPsi> {
                                                   .viewInsets
                                                   .bottom,
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               height: MediaQuery.of(context)
                                                       .size
                                                       .height *

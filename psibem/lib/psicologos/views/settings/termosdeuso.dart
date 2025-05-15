@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TermsOfUseContent extends StatelessWidget {
+  const TermsOfUseContent({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3c4bfcb-da4f-422d-bb85-84390b3cd92e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86_64/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/mainScreen/Homepsi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/mainScreen/Homepsi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/settings_psi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/settings_psi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/termosdeuso.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/termosdeuso.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/register/cadastro.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/register/cadastro.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/register/cadastro_psi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/register/cadastro_psi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/compartilhamento_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/compartilhamento_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/emotions_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/emotions_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/settings/settings_paci.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/settings/settings_paci.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2x9AgivH1ChWRRFyEaSEOFmGxRf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3c4bfcb-da4f-422d-bb85-84390b3cd92e" name="Changes" comment="" />
+      <created>1747340030833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747340030833</updated>
+    </task>
+    <servers />
+  </component>
+</project>

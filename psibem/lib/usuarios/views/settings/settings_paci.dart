@@ -449,7 +449,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
       await _auth.currentUser?.reauthenticateWithCredential(credential);
 
       // Exclui da API local
-      await _apiService.deleteUser(_uid);
+      // await _apiService.deleteUser(_uid);
 
       // Exclui do Firestore
       await _firestore.collection('usuarios').doc(_uid).delete();
@@ -631,7 +631,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
                               ..onTap = () {
                                 showModalBottomSheet(
                                   context: context,
-                                  isScrollControlled: true, 
+                                  isScrollControlled: true,
                                   builder: (context) => Padding(
                                     padding: EdgeInsets.only(
                                       bottom: MediaQuery.of(context)
@@ -642,8 +642,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.9,
-                                      child:
-                                          TermsOfUseContent(), 
+                                      child: TermsOfUseContent(),
                                     ),
                                   ),
                                 );
