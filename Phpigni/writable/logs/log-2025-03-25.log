@@ -1,0 +1,214 @@
+CRITICAL - 2025-03-25 17:34:26 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 17:44:41 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 17:50:27 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:01:05 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 191.
+ 1 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:19:29 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:20:20 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:26:04 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:27:18 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:28:08 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 18:50:21 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 19:01:04 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 19:12:32 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 19:18:52 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 188.
+ 1 APPPATH\Controllers\AuthController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 19:19:43 --> ErrorException: Undefined array key "senha"
+[Method: POST, Route: api/update-user]
+in APPPATH\Controllers\AuthController.php on line 128.
+ 1 APPPATH\Controllers\AuthController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "senha"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->updateUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 19:19:56 --> ErrorException: Undefined array key "senha"
+[Method: POST, Route: api/update-user]
+in APPPATH\Controllers\AuthController.php on line 128.
+ 1 APPPATH\Controllers\AuthController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "senha"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->updateUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-25 19:20:59 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => alira
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-25 19:20:59 --> Resultado da atualização: sucesso
+INFO - 2025-03-25 19:20:59 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => alira
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-03-25 19:20:59
+    [ativo] => 1
+)
+
+INFO - 2025-03-25 19:21:10 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => Testinho
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-25 19:21:10 --> Resultado da atualização: sucesso
+INFO - 2025-03-25 19:21:10 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => Testinho
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-03-25 19:21:10
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-25 19:21:22 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 187.
+ 1 APPPATH\Controllers\AuthController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

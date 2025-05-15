@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096721280070",
+    "project_id": "psibem-8274f",
+    "storage_bucket": "psibem-8274f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096721280070:android:a8d40c867e27c21c192e47",
+        "android_client_info": {
+          "package_name": "com.example.psibem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096721280070-khhjinstjq5f8msijtoc20l2ds2beomb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP2D6VXyg76SDA0g6u0p_OUbBZM4fXPb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096721280070-khhjinstjq5f8msijtoc20l2ds2beomb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

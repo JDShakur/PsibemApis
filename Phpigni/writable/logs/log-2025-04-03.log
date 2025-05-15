@@ -1,0 +1,81 @@
+INFO - 2025-04-03 22:20:08 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => Test
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-03 22:20:08 --> Resultado da atualização: sucesso
+INFO - 2025-04-03 22:20:08 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => Test
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-03 22:20:08
+    [ativo] => 1
+)
+
+INFO - 2025-04-03 22:39:19 --> Dados para atualização: Array
+(
+    [email] => teste@teste.co
+    [apelido] => Test
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-03 22:39:19 --> Resultado da atualização: sucesso
+INFO - 2025-04-03 22:39:19 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.co
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => Test
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-03 22:39:19
+    [ativo] => 1
+)
+
+INFO - 2025-04-03 22:41:17 --> Dados para atualização: Array
+(
+    [email] => teste@teste.co
+    [apelido] => Tester
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-03 22:41:17 --> Resultado da atualização: sucesso
+INFO - 2025-04-03 22:41:17 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.co
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => Tester
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-03 22:41:17
+    [ativo] => 1
+)
+

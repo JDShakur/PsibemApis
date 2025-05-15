@@ -1,0 +1,2 @@
+C:/xampp/htdocs/projects/tcc/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/xampp/htdocs/projects/tcc/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/CMakeFiles/rebuild_cache.dir

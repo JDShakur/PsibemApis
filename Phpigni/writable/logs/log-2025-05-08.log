@@ -1,0 +1,28 @@
+ERROR - 2025-05-08 14:09:39 --> Usuário não encontrado para UID: VqCGw2qDbYcdN4s6ZjVjyiqWe5B3
+INFO - 2025-05-08 18:33:08 --> Dados para atualização: Array
+(
+    [email] => testepsy@mail.com
+    [apelido] => Dr Maria
+    [nome] => Maria esperança 
+    [telefone] => 1140028922
+    [data] => 2025-05-08
+    [sexo] => Outro
+)
+
+INFO - 2025-05-08 18:33:08 --> Resultado da atualização: sucesso
+INFO - 2025-05-08 18:33:08 --> Dados após atualização: Array
+(
+    [id] => 17
+    [uid] => GvXD086ECsWM3tlRQoEPH6BnYaP2
+    [email] => testepsy@mail.com
+    [password_hash] => $2y$10$NwLCfnP72HVRvg2vB/3W4.CSd7/Co3Q6RJBoqCd9knlCUgJhP6wUa
+    [apelido] => Dr Maria
+    [nome] => Maria esperança 
+    [telefone] => 1140028922
+    [data] => 2025-05-08
+    [sexo] => Outro
+    [created_at] => 2025-05-08 14:42:45
+    [updated_at] => 2025-05-08 18:33:08
+    [ativo] => 1
+)
+

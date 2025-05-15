@@ -1,0 +1,2 @@
+C:/projects/tcc/psibem/android/app/.cxx/Debug/kf5z5p49/x86/CMakeFiles/edit_cache.dir
+C:/projects/tcc/psibem/android/app/.cxx/Debug/kf5z5p49/x86/CMakeFiles/rebuild_cache.dir

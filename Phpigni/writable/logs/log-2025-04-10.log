@@ -1,0 +1,93 @@
+INFO - 2025-04-10 22:12:33 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-10 22:12:33 --> Resultado da atualização: sucesso
+INFO - 2025-04-10 22:12:33 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-10 22:12:33
+    [ativo] => 1
+)
+
+INFO - 2025-04-10 22:47:22 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-10 22:47:22 --> Resultado da atualização: sucesso
+INFO - 2025-04-10 22:47:22 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-10 22:47:22
+    [ativo] => 1
+)
+
+CRITICAL - 2025-04-10 22:56:34 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 187.
+ 1 APPPATH\Controllers\AuthController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-10 22:58:43 --> Usuário não encontrado para UID: TYN0U3TM6dXPk1AJDOfEXIujZpx1
+INFO - 2025-04-10 23:29:50 --> Dados para atualização: Array
+(
+    [email] => teste01@teste.com
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+)
+
+INFO - 2025-04-10 23:29:50 --> Resultado da atualização: sucesso
+INFO - 2025-04-10 23:29:50 --> Dados após atualização: Array
+(
+    [id] => 15
+    [uid] => YUwhoGb2BTe0dOgIXm1FoNKaIFd2
+    [email] => teste01@teste.com
+    [password_hash] => $2y$10$Vv3/1iipsbC/3P3hudfpheQBPRnV136A3qs9jZTNYougqxieW62ja
+    [apelido] => coisinha
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Feminino
+    [created_at] => 2025-03-25 18:19:24
+    [updated_at] => 2025-04-10 23:29:50
+    [ativo] => 1
+)
+
+ERROR - 2025-04-10 23:29:56 --> UID não fornecido

@@ -1,0 +1,921 @@
+INFO - 2025-03-24 18:29:57 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:29:57 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => novo_email@example.com
+    [telefone] => 11966666666
+)
+
+INFO - 2025-03-24 18:29:57 --> Dados para atualização: Array
+(
+    [email] => novo_email@example.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 11966666666
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:29:57 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:29:57 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => novo_email@example.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 11966666666
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:29:57
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:31:13 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:31:13 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 18:31:13 --> Dados para atualização: Array
+(
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:31:13 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:31:13 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:31:13
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:31:24 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:31:24 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 18:31:24 --> Dados para atualização: Array
+(
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:31:24 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:31:24 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:31:24
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:32:12 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:32:12 --> Dados recebidos: Array
+(
+    [uid] => 123
+    [email] => novo@email.com
+    [nome] => Novo Nome
+)
+
+ERROR - 2025-03-24 18:32:12 --> Usuário não encontrado para UID: 123
+INFO - 2025-03-24 18:32:28 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:32:28 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 18:32:28 --> Dados para atualização: Array
+(
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:32:28 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:32:28 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@testet.com
+    [apelido] => user_nick
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:32:28
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:32:48 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:32:48 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+    [apelido] => coisinha
+)
+
+INFO - 2025-03-24 18:32:48 --> Dados para atualização: Array
+(
+    [email] => teste@testet.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:32:48 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:32:48 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@testet.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:32:48
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:32:59 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:32:59 --> Dados recebidos: Array
+(
+    [uid] => 
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+    [apelido] => coisinha
+)
+
+ERROR - 2025-03-24 18:32:59 --> UID não fornecido
+INFO - 2025-03-24 18:33:15 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:33:15 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@testet.com
+    [telefone] => 1140028922
+    [apelido] => coisinha
+)
+
+INFO - 2025-03-24 18:33:15 --> Dados para atualização: Array
+(
+    [email] => teste@testet.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:33:15 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:33:15 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@testet.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:33:15
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 18:33:25 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:33:25 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@teste.com
+    [telefone] => 1140028922
+    [apelido] => coisinha
+)
+
+INFO - 2025-03-24 18:33:25 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:33:25 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:33:25 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:33:25
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 18:49:15 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 18:49:28 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:49:28 --> Dados recebidos: Array
+(
+    [uid] => n5UJfjz9tcgBd9dIz4GvUMwTybq1
+    [apelido] => alira
+    [nome] => 
+    [telefone] => 
+)
+
+ERROR - 2025-03-24 18:49:28 --> Usuário não encontrado para UID: n5UJfjz9tcgBd9dIz4GvUMwTybq1
+CRITICAL - 2025-03-24 18:49:37 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 18:50:15 --> Recebida requisição para updateUser
+INFO - 2025-03-24 18:50:15 --> Dados recebidos: Array
+(
+    [uid] => 54321
+    [email] => teste@teste.com
+    [telefone] => 1140028922
+    [apelido] => coisinha
+)
+
+INFO - 2025-03-24 18:50:15 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 18:50:15 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 18:50:15 --> Dados após atualização: Array
+(
+    [id] => 8
+    [uid] => 54321
+    [email] => teste@teste.com
+    [apelido] => coisinha
+    [nome] => Maria Souza
+    [telefone] => 1140028922
+    [data] => 1995-05-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-13 17:55:12
+    [updated_at] => 2025-03-24 18:50:15
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 18:50:59 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 18:54:30 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:00:26 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:00:51 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:00:51 --> Dados recebidos: Array
+(
+    [uid] => sTDaVHQJ42WdvjM5wpT9i7w8HzL2
+    [apelido] => azul
+    [nome] => 
+    [telefone] => 
+)
+
+INFO - 2025-03-24 19:00:51 --> Dados para atualização: Array
+(
+    [email] => testee@teste.com
+    [apelido] => azul
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 19:00:51 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:00:51 --> Dados após atualização: Array
+(
+    [id] => 9
+    [uid] => sTDaVHQJ42WdvjM5wpT9i7w8HzL2
+    [email] => testee@teste.com
+    [apelido] => azul
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-24 19:00:19
+    [updated_at] => 2025-03-24 19:00:51
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:01:40 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:02:28 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:02:28 --> Dados recebidos: Array
+(
+    [uid] => sTDaVHQJ42WdvjM5wpT9i7w8HzL2
+    [apelido] => coisa
+    [nome] => testando
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 19:02:28 --> Dados para atualização: Array
+(
+    [email] => testee@teste.com
+    [apelido] => coisa
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-05
+    [sexo] => Feminino
+)
+
+INFO - 2025-03-24 19:02:28 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:02:28 --> Dados após atualização: Array
+(
+    [id] => 9
+    [uid] => sTDaVHQJ42WdvjM5wpT9i7w8HzL2
+    [email] => testee@teste.com
+    [apelido] => coisa
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-05
+    [sexo] => Feminino
+    [created_at] => 2025-03-24 19:00:19
+    [updated_at] => 2025-03-24 19:02:28
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:18:17 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:18:36 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:18:36 --> Dados recebidos: Array
+(
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [apelido] => josemaria
+    [nome] => testando 
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 19:18:36 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => testando 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 19:18:36 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:18:36 --> Dados após atualização: Array
+(
+    [id] => 10
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => testando 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:18:12
+    [updated_at] => 2025-03-24 19:18:36
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:19:15 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:19:25 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:19:25 --> Dados recebidos: Array
+(
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [apelido] => josemar
+    [nome] => 
+    [telefone] => 
+)
+
+INFO - 2025-03-24 19:19:25 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => josemar
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 19:19:25 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:19:25 --> Dados após atualização: Array
+(
+    [id] => 10
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste@teste.com
+    [apelido] => josemar
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:18:12
+    [updated_at] => 2025-03-24 19:19:25
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:19:37 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:30:19 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:30:41 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:30:41 --> Dados recebidos: Array
+(
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 19:30:41 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 19:30:41 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:30:41 --> Dados após atualização: Array
+(
+    [id] => 10
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:18:12
+    [updated_at] => 2025-03-24 19:30:41
+    [ativo] => 1
+)
+
+INFO - 2025-03-24 19:30:41 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:30:41 --> Dados recebidos: Array
+(
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+)
+
+INFO - 2025-03-24 19:30:41 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 19:30:41 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:30:41 --> Dados após atualização: Array
+(
+    [id] => 10
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:18:12
+    [updated_at] => 2025-03-24 19:30:41
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:30:41 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:30:41 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 19:31:31 --> Recebida requisição para updateUser
+INFO - 2025-03-24 19:31:31 --> Dados recebidos: Array
+(
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste2@teste.com
+)
+
+INFO - 2025-03-24 19:31:31 --> Dados para atualização: Array
+(
+    [email] => teste2@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 19:31:31 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 19:31:31 --> Dados após atualização: Array
+(
+    [id] => 10
+    [uid] => QdqWX0yV1DgiwBRJOTgN9s7JdCE2
+    [email] => teste2@teste.com
+    [apelido] => josemaria
+    [nome] => Josafá 
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:18:12
+    [updated_at] => 2025-03-24 19:31:31
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 19:32:35 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:35:03 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:35:03 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:35:38 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 19:35:38 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 20:01:58 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 193.
+ 1 APPPATH\Controllers\AuthController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 20:02:10 --> Recebida requisição para updateUser
+INFO - 2025-03-24 20:02:10 --> Dados recebidos: Array
+(
+    [uid] => uuJB8Tyy8FTQqFs9eYvQGQ3lweq1
+    [apelido] => alonso
+    [nome] => 
+    [telefone] => 
+)
+
+INFO - 2025-03-24 20:02:10 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => alonso
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 20:02:10 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 20:02:10 --> Dados após atualização: Array
+(
+    [id] => 11
+    [uid] => uuJB8Tyy8FTQqFs9eYvQGQ3lweq1
+    [email] => teste@teste.com
+    [apelido] => alonso
+    [nome] => 
+    [telefone] => 
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 19:59:20
+    [updated_at] => 2025-03-24 20:02:10
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 21:35:24 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 21:35:38 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => teestandoq
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 21:35:38 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 21:35:38 --> Dados após atualização: Array
+(
+    [id] => 12
+    [uid] => w2WeCmAnffcWbBi4hcylnnUUAko2
+    [email] => teste@teste.com
+    [apelido] => teestandoq
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 21:35:19
+    [updated_at] => 2025-03-24 21:35:38
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 21:36:15 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 21:36:30 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => testin
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+)
+
+INFO - 2025-03-24 21:36:30 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 21:36:30 --> Dados após atualização: Array
+(
+    [id] => 12
+    [uid] => w2WeCmAnffcWbBi4hcylnnUUAko2
+    [email] => teste@teste.com
+    [apelido] => testin
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Outro
+    [created_at] => 2025-03-24 21:35:19
+    [updated_at] => 2025-03-24 21:36:30
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 22:30:40 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 22:33:56 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 22:38:41 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 22:38:59 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-24 22:40:44 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-24 22:40:58 --> Dados para atualização: Array
+(
+    [email] => teste@teste.com
+    [apelido] => testinho
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Masculino
+)
+
+INFO - 2025-03-24 22:40:58 --> Resultado da atualização: sucesso
+INFO - 2025-03-24 22:40:58 --> Dados após atualização: Array
+(
+    [id] => 13
+    [uid] => OWgQgkxzB0b9290dGZAWS5mACmx2
+    [email] => teste@teste.com
+    [apelido] => testinho
+    [nome] => testando
+    [telefone] => 1140028922
+    [data] => 2025-03-01
+    [sexo] => Masculino
+    [created_at] => 2025-03-24 22:30:35
+    [updated_at] => 2025-03-24 22:40:58
+    [ativo] => 1
+)
+
+CRITICAL - 2025-03-24 22:41:20 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: api/check-user]
+in APPPATH\Controllers\AuthController.php on line 190.
+ 1 APPPATH\Controllers\AuthController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->checkUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

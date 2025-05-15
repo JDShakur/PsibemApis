@@ -1,0 +1,271 @@
+CRITICAL - 2025-03-08 14:32:47 --> Error: Class "App\Models\Psicologos" not found
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:33:02 --> Error: Class "App\Models\Psicologos" not found
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:33:08 --> Error: Class "App\Models\Usuarios" not found
+[Method: POST, Route: api/registerUser]
+in APPPATH\Controllers\AuthController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:37:25 --> Error: Class "App\Models\Usuarios" not found
+[Method: POST, Route: api/register-user]
+in APPPATH\Controllers\AuthController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:38:41 --> Error: Class "App\Models\Usuarios" not found
+[Method: POST, Route: api/register-user]
+in APPPATH\Controllers\AuthController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:39:42 --> Error: Class "App\Models\Usuarios" not found
+[Method: POST, Route: api/register-user]
+in APPPATH\Controllers\AuthController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-08 14:42:29 --> mysqli_sql_exception: Unknown column 'apelido' in 'field list' in C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\projects\tcc\Phpigni\app\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+#10 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\projects\tcc\Phpigni\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-08 14:42:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'apelido' in 'field list'
+[Method: POST, Route: api/register-user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:42:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'apelido' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:42:29\', \'2025-03-08 14:42:29\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:42:29\', \'2025-03-08 14:42:29\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:42:29 --> [Caused by] mysqli_sql_exception: Unknown column 'apelido' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:42:29\', \'2025-03-08 14:42:29\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:42:29\', \'2025-03-08 14:42:29\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:42:29\', \'2025-03-08 14:42:29\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-08 14:49:08 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\projects\tcc\Phpigni\app\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+#10 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\projects\tcc\Phpigni\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-08 14:49:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: api/register-user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:49:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:49:08\', \'2025-03-08 14:49:08\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:49:08\', \'2025-03-08 14:49:08\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:49:08 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:49:08\', \'2025-03-08 14:49:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:49:08\', \'2025-03-08 14:49:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67890\', \'user@example.com\', \'common_user\', \'Maria Oliveira\', \'11912345678\', \'09-09-1999\', \'Feminino\', \'2025-03-08 14:49:08\', \'2025-03-08 14:49:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`uid`, `email`, `apelido`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AuthController.php(52): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerUser()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:57:46 --> Error: Class "App\Models\Psicologos" not found
+[Method: POST, Route: api/register-psi]
+in APPPATH\Controllers\AuthController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:59:03 --> ErrorException: Undefined array key "crp"
+[Method: POST, Route: api/register-psi]
+in APPPATH\Controllers\AuthController.php on line 31.
+ 1 APPPATH\Controllers\AuthController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "crp"', 'C:\\xampp\\htdocs\\projects\\tcc\\Phpigni\\app\\Controllers\\AuthController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-08 14:59:24 --> mysqli_sql_exception: Unknown column 'apelido' in 'field list' in C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `Ps...', 0)
+#1 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ps...')
+#2 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ps...')
+#3 C:\xampp\htdocs\projects\tcc\Phpigni\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ps...', Array, false)
+#4 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\tcc\Phpigni\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\projects\tcc\Phpigni\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\projects\tcc\Phpigni\app\Controllers\AuthController.php(27): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+#10 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\xampp\htdocs\projects\tcc\Phpigni\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\projects\tcc\Phpigni\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\projects\tcc\Phpigni\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-08 14:59:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'apelido' in 'field list'
+[Method: POST, Route: api/register-psi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :crp:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AuthController.php(27): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:59:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'apelido' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67090\', \'user@example.com\', \'common_user\', \'909090\', \'Maria José\', \'11912345678\', \'1999-09-10\', \'Feminino\', \'2025-03-08 14:59:24\', \'2025-03-08 14:59:24\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67090\', \'user@example.com\', \'common_user\', \'909090\', \'Maria José\', \'11912345678\', \'1999-09-10\', \'Feminino\', \'2025-03-08 14:59:24\', \'2025-03-08 14:59:24\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :crp:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\AuthController.php(27): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 14:59:24 --> [Caused by] mysqli_sql_exception: Unknown column 'apelido' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67090\', \'user@example.com\', \'common_user\', \'909090\', \'Maria José\', \'11912345678\', \'1999-09-10\', \'Feminino\', \'2025-03-08 14:59:24\', \'2025-03-08 14:59:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67090\', \'user@example.com\', \'common_user\', \'909090\', \'Maria José\', \'11912345678\', \'1999-09-10\', \'Feminino\', \'2025-03-08 14:59:24\', \'2025-03-08 14:59:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (\'67090\', \'user@example.com\', \'common_user\', \'909090\', \'Maria José\', \'11912345678\', \'1999-09-10\', \'Feminino\', \'2025-03-08 14:59:24\', \'2025-03-08 14:59:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Psicologos` (`uid`, `email`, `apelido`, `crp`, `nome`, `telefone`, `data`, `sexo`, `created_at`, `updated_at`) VALUES (:uid:, :email:, :apelido:, :crp:, :nome:, :telefone:, :data:, :sexo:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AuthController.php(27): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->registerPsi()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
