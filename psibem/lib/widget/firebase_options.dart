@@ -24,14 +24,13 @@ class DefaultFirebaseOptions {
       authDomain: "psibem-8274f.firebaseapp.com",
       databaseURL: "https://psibem-8274f-default-rtdb.firebaseio.com",
       projectId: "psibem-8274f",
-      storageBucket: "psibem-8274f.firebasestorage.app",
+      storageBucket: "psibem-8274f.appspot.com",
       messagingSenderId: "1096721280070",
       appId: "1:1096721280070:web:c03e3dc56116532f192e47",
       measurementId: "G-YLCZ6F8N3K");
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey:
-        'AIzaSyAP2D6VXyg76SDA0g6u0p_OUbBZM4fXPb4', 
+    apiKey: 'AIzaSyAP2D6VXyg76SDA0g6u0p_OUbBZM4fXPb4',
     appId: '1:1096721280070:android:a8d40c867e27c21c192e47',
     messagingSenderId: '1096721280070',
     projectId: 'psibem-8274f',

@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -13,22 +14,7 @@ void main() async {
     DeviceOrientation.portraitUp,
   ]);
 
-  await _initializeFirebase();
-  runApp(const MyApp());
-}
-
-Future<void> _initializeFirebase() async {
-  try {
-    if (Firebase.apps.isNotEmpty) {
-      return;
-    }
-
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-  } catch (e) {
-    print('Erro na inicialização do Firebase: $e');
-  }
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -36,19 +22,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: '/splash',
-      debugShowCheckedModeBanner: false,
-      routes: {
-        '/splash': (context) => const Splashscreen(),
-        '/login': (context) => Login(),
-        '/home': (context) => Pagerotation(),
-      },
-      title: 'Mood Tracker',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return FutureBuilder(
+      future: Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
       ),
-      home: Splashscreen(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done) {
+          return MaterialApp(
+            initialRoute: '/splash',
+            debugShowCheckedModeBanner: false,
+            routes: {
+              '/splash': (context) => const Splashscreen(),
+              '/login': (context) => Login(),
+              '/home': (context) => Pagerotation(),
+            },
+            title: 'Mood Tracker',
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: Splashscreen(),
+          );
+        }
+
+        return const MaterialApp(
+          home: Scaffold(
+            body: Center(child: CircularProgressIndicator()),
+          ),
+        );
+      },
     );
   }
 }

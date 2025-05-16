@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3c4bfcb-da4f-422d-bb85-84390b3cd92e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/android/app/.cxx/Debug/302z1r4o/x86_64/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/mainScreen/Homepsi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/mainScreen/Homepsi.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/settings_psi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/settings_psi.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/termosdeuso.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/psicologos/views/settings/termosdeuso.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/register/cadastro.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/register/cadastro.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/register/cadastro_psi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/register/cadastro_psi.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/compartilhamento_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/compartilhamento_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/emotions_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/moodtracker/emotions_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/psibem/lib/usuarios/views/settings/settings_paci.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/usuarios/views/settings/settings_paci.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/lib/widget/firebase_options.dart" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/lib/widget/firebase_options.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psibem/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/psibem/web/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
