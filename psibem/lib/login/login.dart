@@ -88,7 +88,7 @@ class _LoginState extends State<Login> {
       String userName = snapshot['apelido'];
       return userName;
     }
-    return "Usuário"; 
+    return "Usuário";
   }
 
   @override

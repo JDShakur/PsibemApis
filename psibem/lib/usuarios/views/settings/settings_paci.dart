@@ -638,7 +638,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
                                           .viewInsets
                                           .bottom,
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.9,

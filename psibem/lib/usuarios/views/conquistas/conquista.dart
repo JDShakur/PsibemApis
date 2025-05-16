@@ -1,16 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:psibem/usuarios/views/conquistas/ModelConquista.dart';
 
-const List<String> conquistas = [
-  "Cores da Vida",
-  "Reflexão Profunda",
-  "Sessão Concluída",
-  "Check-in da Mente",
-  "Pequenos Gestos",
-  "Momento Zen",
-  "Modo Offline",
-  "Resiliência",
-  "Onda Positiva",
-];
+Future<List<Conquista>> buscarConquistasDoUsuario() async {
+  final uid = FirebaseAuth.instance.currentUser?.uid;
+  if (uid == null) return [];
+
+  final snapshot = await FirebaseFirestore.instance
+      .collection('usuarios')
+      .doc(uid)
+      .collection('conquistas')
+      .get();
+
+  return snapshot.docs
+      .map((doc) => Conquista.fromMap(doc.id, doc.data()))
+      .toList();
+}
+
+Future<void> registrarConquista(String titulo, String descricao) async {
+  final user = FirebaseAuth.instance.currentUser;
+  if (user == null) return;
+
+  final conquistaRef = FirebaseFirestore.instance
+      .collection('usuarios')
+      .doc(user.uid)
+      .collection('conquistas')
+      .doc(titulo);
+
+  final doc = await conquistaRef.get();
+
+  if (!doc.exists) {
+    await conquistaRef.set({
+      'titulo': titulo,
+      'descricao': descricao,
+      'dataDesbloqueio': DateTime.now(),
+    });
+  }
+}
 
 class ConquistasScreen extends StatefulWidget {
   const ConquistasScreen({super.key});
@@ -21,6 +48,42 @@ class ConquistasScreen extends StatefulWidget {
 
 class _ConquistasScreenState extends State<ConquistasScreen> {
   bool showPopup = true;
+  List<Conquista> conquistasDesbloqueadas = [];
+
+  @override
+  void initState() {
+    super.initState();
+    carregarConquistas();
+  }
+
+  Future<void> carregarConquistas() async {
+    final conquistas = await buscarConquistasDoUsuario();
+    setState(() {
+      conquistasDesbloqueadas = conquistas;
+    });
+  }
+
+  final conquistasDisponiveis = [
+    {
+      "titulo": "Primeiro Passo",
+      "descricao": "Fez login pela primeira vez.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] == 1,
+    },
+    {
+      "titulo": "Resiliência",
+      "descricao": "Acessou o app por 3 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 3,
+    },
+    {
+      "titulo": "Persistência",
+      "descricao": "Acessou o app por 7 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 7,
+    },
+  ];
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +164,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                     ],
                   ),
                   child: PageView.builder(
-                    itemCount: (conquistas.length / 6).ceil(),
+                    itemCount: (conquistasDesbloqueadas.length / 6).ceil(),
                     itemBuilder: (context, pageIndex) {
                       return GridView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -112,13 +175,14 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                           mainAxisSpacing: 15,
                           childAspectRatio: 1,
                         ),
-                        itemCount: (pageIndex + 1) * 6 > conquistas.length
-                            ? conquistas.length - pageIndex * 6
-                            : 6,
+                        itemCount:
+                            (pageIndex + 1) * 6 > conquistasDesbloqueadas.length
+                                ? conquistasDesbloqueadas.length - pageIndex * 6
+                                : 6,
                         itemBuilder: (context, index) {
-                          return _ConquistaCard(
-                            conquista: conquistas[pageIndex * 6 + index],
-                          );
+                          final conquista =
+                              conquistasDesbloqueadas[pageIndex * 6 + index];
+                          return _ConquistaCard(conquista: conquista);
                         },
                       );
                     },
@@ -148,6 +212,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Icon(Icons.new_releases_rounded, color: Color(0xFF208584)),
+            const SizedBox(width: 5),
             const Text(
               "Nova Conquista!",
               style: TextStyle(
@@ -169,7 +234,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
 }
 
 class _ConquistaCard extends StatelessWidget {
-  final String conquista;
+  final Conquista conquista;
 
   const _ConquistaCard({required this.conquista});
 
@@ -179,7 +244,8 @@ class _ConquistaCard extends StatelessWidget {
       onTap: () {
         showDialog(
           context: context,
-          builder: (context) => _buildModal(context),
+          builder: (context) =>
+              _buildModal(context, conquista.nome, conquista.descricao),
         );
       },
       child: Container(
@@ -199,7 +265,7 @@ class _ConquistaCard extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                conquista,
+                conquista.nome,
                 textAlign: TextAlign.center,
                 style:
                     const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -211,13 +277,13 @@ class _ConquistaCard extends StatelessWidget {
     );
   }
 
-  Widget _buildModal(BuildContext context) {
+  Widget _buildModal(BuildContext context, String titulo, String descricao) {
     return AlertDialog(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
-      title: const Text("Primeiro Passo"),
-      content: const Text("Registrou seu primeiro sentimento no calendário."),
+      title: Text(titulo),
+      content: Text(descricao),
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),

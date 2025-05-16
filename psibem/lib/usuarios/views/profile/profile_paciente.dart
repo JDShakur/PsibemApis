@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:psibem/psicologos/views/settings/profile_picture_selector.dart';
 import 'package:psibem/usuarios/views/conquistas/conquista.dart';
+
 import 'package:psibem/usuarios/views/settings/settings_paci.dart';
 import 'package:psibem/widget/logout_button.dart';
 

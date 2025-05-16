@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:psibem/usuarios/views/conquistas/conquista.dart';
 
 class RespirationPage extends StatelessWidget {
   const RespirationPage({super.key});
@@ -98,7 +99,9 @@ class RespirationPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  onPressed: () {
+                  onPressed: () async {
+                    await registrarConquista(
+                        "Momento Zen", "Completou um exercício de respiração.");
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => TelaRespiracao()),
@@ -220,8 +223,8 @@ class _TelaRespiracaoState extends State<TelaRespiracao>
       _controller.reset();
       _controller.repeat();
       isPaused = false;
-      currentColor = const Color(0xFF438778); // Reset para cor inicial
-      currentSize = 15; // Reset para tamanho inicial
+      currentColor = const Color(0xFF438778);
+      currentSize = 15;
     });
   }
 

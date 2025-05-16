@@ -25,11 +25,78 @@ class _PagerotationState extends State<Pagerotation> {
   bool _isLoading = true;
   String? _errorMessage;
 
+  Future<void> registrarConquista(String titulo, String descricao) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
+
+    final conquistasRef = FirebaseFirestore.instance
+        .collection('usuarios')
+        .doc(user.uid)
+        .collection('conquistas');
+
+    final conquistaDoc = await conquistasRef.doc(titulo).get();
+    if (!conquistaDoc.exists) {
+      await conquistasRef.doc(titulo).set({
+        'titulo': titulo,
+        'descricao': descricao,
+        'data': FieldValue.serverTimestamp(),
+      });
+    }
+  }
+
   @override
   void initState() {
     super.initState();
     _isPsychologist = _checkIfUserIsPsychologist();
     _setupAuthListener();
+    verificarLoginConsecutivo();
+  }
+
+  Future<void> verificarLoginConsecutivo() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
+
+    final docRef =
+        FirebaseFirestore.instance.collection('usuarios').doc(user.uid);
+    final doc = await docRef.get();
+
+    final now = DateTime.now();
+    final hoje = DateTime(now.year, now.month, now.day);
+
+    if (doc.exists) {
+      final data = doc.data()!;
+      final ultimoLoginTimestamp = data['ultimoLogin'] as Timestamp?;
+      final diasConsecutivos = data['diasConsecutivos'] ?? 0;
+
+      if (ultimoLoginTimestamp != null) {
+        final ultimoLogin = ultimoLoginTimestamp.toDate();
+        final ultimo =
+            DateTime(ultimoLogin.year, ultimoLogin.month, ultimoLogin.day);
+        final diff = hoje.difference(ultimo).inDays;
+
+        int novoTotal = 1;
+        if (diff == 1) {
+          novoTotal = diasConsecutivos + 1;
+        } else if (diff == 0) {
+          novoTotal = diasConsecutivos; // já contou hoje
+        }
+
+        await docRef.update({
+          'ultimoLogin': hoje,
+          'diasConsecutivos': novoTotal,
+        });
+
+        if (novoTotal >= 3) {
+          await registrarConquista(
+              "Resiliência", "Acessou o app por 3 dias consecutivos.");
+        }
+      } else {
+        await docRef.set({
+          'ultimoLogin': hoje,
+          'diasConsecutivos': 1,
+        }, SetOptions(merge: true));
+      }
+    }
   }
 
   Future<bool> _checkIfUserIsPsychologist() async {
@@ -58,12 +125,7 @@ class _PagerotationState extends State<Pagerotation> {
   void _setupAuthListener() {
     FirebaseAuth.instance.authStateChanges().listen((user) {
       if (user == null) {
-        // Redireciona para a tela de login se o usuário deslogar
-        Navigator.pushNamedAndRemoveUntil(
-          context, 
-          '/login', 
-          (route) => false
-        );
+        Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
       }
     });
   }
@@ -116,7 +178,7 @@ class _PagerotationState extends State<Pagerotation> {
       });
       return false;
     }
-    
+
     // Se estiver na home, mostra diálogo de confirmação
     final shouldExit = await showDialog(
       context: context,
@@ -135,7 +197,7 @@ class _PagerotationState extends State<Pagerotation> {
         ],
       ),
     );
-    
+
     return shouldExit ?? false;
   }
 
