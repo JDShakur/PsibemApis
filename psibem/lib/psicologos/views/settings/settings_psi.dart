@@ -553,7 +553,7 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
       // await _apiService.deleteUser(_uid);
 
       // Exclui do Firestore
-      //await _firestore.collection('usuarios').doc(_uid).delete();
+      await _firestore.collection('usuarios').doc(_uid).delete();
 
       // Exclui conta do Firebase Auth
       await _auth.currentUser?.delete();
