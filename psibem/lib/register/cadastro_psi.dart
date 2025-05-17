@@ -6,7 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:psibem/psicologos/views/settings/termosdeuso.dart';
+import 'package:psibem/usuarios/views/settings/termosdeuso.dart';
 import 'package:psibem/widget/PageRotation.dart';
 import 'package:psibem/widget/custom_datafild.dart';
 import 'package:psibem/widget/custom_text_field.dart';

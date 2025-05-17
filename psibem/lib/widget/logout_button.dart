@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:psibem/login/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:psibem/widget/PageRotation.dart';
 
 class LogoutButton extends StatefulWidget {
   const LogoutButton({super.key});
@@ -25,7 +25,7 @@ class _LogoutButtonState extends State<LogoutButton> {
 
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => Pagerotation()),
+        MaterialPageRoute(builder: (context) => Login()),
         (Route<dynamic> route) => false,
       );
     } catch (e) {

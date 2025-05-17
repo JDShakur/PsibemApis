@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
 import 'package:psibem/api_connection/api_connection.dart';
-import 'package:psibem/psicologos/views/settings/termosdeuso.dart';
+import 'package:psibem/usuarios/views/settings/termosdeuso.dart';
 import 'package:psibem/usuarios/views/settings/ProfileEditDialog.dart';
 import 'package:psibem/widget/logout_button.dart';
 
@@ -656,24 +656,21 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F9FC),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFF6F9FC),
-        elevation: 0,
-        title: const Padding(
-          padding: EdgeInsets.only(top: 10.0),
-          child: Text(
-            'Configurações',
-            style: TextStyle(
-              color: Color(0xFF81C7C6),
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFF81C7C6),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
         ),
-        leading: Padding(
-          padding: const EdgeInsets.only(top: 10.0),
-          child: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Color(0xFF81C7C6)),
-            onPressed: () => Navigator.pop(context),
+        backgroundColor: const Color(0xFF81C7C6),
+        title: const Text(
+          'Configurações',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
@@ -774,7 +771,7 @@ class _SettingsPsicologoState extends State<SettingsPsicologo> {
                     ),
                   ),
                   const Divider(),
-                  const LogoutButton(),
+                  SizedBox(width: 100, child: const LogoutButton()),
                 ],
               ),
             ),

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'package:psibem/psicologos/views/settings/profile_picture_selector.dart';
 import 'package:psibem/psicologos/views/settings/settings_psi.dart';
 import 'package:psibem/widget/logout_button.dart';
@@ -219,13 +220,22 @@ class _ProfilePsicologoState extends State<ProfilePsicologo> {
     return Scaffold(
       backgroundColor: const Color(0xFF81C7C6),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFBEE9E8),
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Color(0xFF81C7C6)),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFF81C7C6),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
+        ),
+        backgroundColor: const Color(0xFF81C7C6),
+        title: const Text(
+          'Perfil',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body: SingleChildScrollView(
@@ -258,18 +268,7 @@ class _ProfilePsicologoState extends State<ProfilePsicologo> {
               ),
               child: Stack(
                 children: [
-                  const Positioned(
-                    top: 50,
-                    left: 24,
-                    child: Text(
-                      'Meu Perfil',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
+                  
 
                   // Botão de configurações
                   Positioned(
@@ -447,10 +446,11 @@ class _ProfilePsicologoState extends State<ProfilePsicologo> {
             const SizedBox(height: 24),
 
             // Botão de Sair
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-                child: LogoutButton()),
-            const SizedBox(height: 24),
+           
+                SizedBox(
+                  width: 100,
+                  child: LogoutButton())
+            
           ],
         ),
       ),

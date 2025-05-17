@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:psibem/login/login.dart';
 import 'package:psibem/register/opcoes.dart';
 
-
 class Loginscreen extends StatefulWidget {
   const Loginscreen({super.key});
 
@@ -23,28 +22,43 @@ class _LoginscreenState extends State<Loginscreen> {
               padding: const EdgeInsets.all(10.0),
               child: Image.asset('lib/assets/images/light.png'),
             ),
-            ElevatedButton(
+            SizedBox(
+              width: 200, 
+              child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (c) => opcadst()));
                 },
-                child: Text(
-                  'Cadastre-se',
-                  style: TextStyle(
-                    color: const Color(0xFF81c7c6),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    'Cadastre-se',
+                    style: TextStyle(
+                      color: const Color(0xFF81c7c6),
+                    ),
                   ),
-                )),
-            ElevatedButton(
+                ),
+              ),
+            ),
+            SizedBox(height: 10), 
+            SizedBox(
+              width: 200, 
+              child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (c) => Login()));
                 },
-                child: Text(
-                  'Login',
-                  style: TextStyle(
-                    color: const Color(0xFF81c7c6),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      color: const Color(0xFF81c7c6),
+                    ),
                   ),
-                )),
+                ),
+              ),
+            ),
           ],
         ),
       ),

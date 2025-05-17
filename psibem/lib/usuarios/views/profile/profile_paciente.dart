@@ -158,8 +158,8 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
     }
     return Scaffold(
       backgroundColor: const Color(0xFF81C7C6),
-      appBar: AppBar(iconTheme: const IconThemeData(color: Colors.white),
-      
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Color(0xFFBEE9E8),
           statusBarIconBrightness: Brightness.light,
@@ -167,7 +167,6 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
         ),
         centerTitle: true,
         title: const Text(
-          
           'Meu Perfil',
           style: TextStyle(
             fontSize: 24,
@@ -191,7 +190,6 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
             },
           ),
         ],
-        
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -223,9 +221,6 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
               ),
               child: Stack(
                 children: [
-                 
-                 
-
                   // Foto e nome do usuário
                   Center(
                     child: Column(
@@ -351,10 +346,8 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
             const SizedBox(height: 24),
 
             // Botão de Sair
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-                child: LogoutButton()),
-            const SizedBox(height: 24),
+
+            SizedBox(width: 100, child: LogoutButton())
           ],
         ),
       ),

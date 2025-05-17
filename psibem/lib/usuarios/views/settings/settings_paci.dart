@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
 import 'package:psibem/api_connection/api_connection.dart';
-import 'package:psibem/psicologos/views/settings/termosdeuso.dart';
+import 'package:psibem/usuarios/views/settings/termosdeuso.dart';
 import 'package:psibem/usuarios/views/settings/ProfileEditDialog.dart';
 import 'package:psibem/widget/logout_button.dart';
 
@@ -449,7 +449,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
       await _auth.currentUser?.reauthenticateWithCredential(credential);
 
       // Exclui da API local
-     // await _apiService.deleteUser(_uid);
+      // await _apiService.deleteUser(_uid);
 
       // Exclui do Firestore
       await _firestore.collection('usuarios').doc(_uid).delete();
@@ -554,7 +554,8 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F9FC),
-      appBar: AppBar(iconTheme: const IconThemeData(color: Color(0xFF81C7C6)),
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Color(0xFF81C7C6)),
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Color(0xFFF6F9FC),
           statusBarIconBrightness: Brightness.dark,
@@ -658,7 +659,7 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
                     ),
                   ),
                   const Divider(),
-                  const LogoutButton(),
+                  SizedBox(width: 100, child: LogoutButton()),
                 ],
               ),
             ),

@@ -101,6 +101,70 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
       "condicao": (Map<String, dynamic> userData) =>
           userData['diasConsecutivos'] >= 7,
     },
+    {
+      "titulo": "Comprometimento",
+      "descricao": "Acessou o app por 15 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 15
+    },
+    {
+      "titulo": "Dedicação",
+      "descricao": "Acessou o app por 30 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 30,
+    },
+    {
+      "titulo": "Superação",
+      "descricao": "Acessou o app por 60 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 60,
+    },
+    {
+      "titulo": "Mestre do App",
+      "descricao": "Acessou o app por 90 dias consecutivos.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['diasConsecutivos'] >= 90,
+    },
+    {
+      "titulo": "Conquista do Dia",
+      "descricao": "Fez login no dia do seu aniversário.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['dataAniversario'] == DateTime.now().day,
+    },
+    {
+      "titulo": "Conquista do Mês",
+      "descricao": "Fez login no mês do seu aniversário.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['dataAniversario'] == DateTime.now().month,
+    },
+    {
+      "titulo": "Conquista do Ano",
+      "descricao": "Fez login no ano do seu aniversário.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['dataAniversario'] == DateTime.now().year,
+    },
+    {
+      "titulo": "Conquista do Século",
+      "descricao": "Fez login no século do seu aniversário.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['dataAniversario'] == DateTime.now().year ~/ 100,
+    },
+    {
+      "titulo": "Conquista do Milênio",
+      "descricao": "Fez login no milênio do seu aniversário.",
+      "condicao": (Map<String, dynamic> userData) =>
+          userData['dataAniversario'] == DateTime.now().year ~/ 1000,
+    },
+    {
+      "titulo": "Leitor Atento",
+      "descricao": "Leu os termos de uso",
+    },
+    {
+      "titulo": "Conquista do Século XXI",
+      "descricao": "Fez login no século XXI.",
+      "condicao": (Map<String, dynamic> userData) =>
+          DateTime.now().year >= 2000 && DateTime.now().year < 2100,
+    },
   ];
 
   @override
@@ -219,8 +283,6 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               ),
             ],
           ),
-
-    
           if (showPopup)
             Positioned(
               top: 70,

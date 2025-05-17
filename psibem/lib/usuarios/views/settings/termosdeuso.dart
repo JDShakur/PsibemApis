@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:psibem/usuarios/views/conquistas/conquista.dart';
 
 class TermsOfUseContent extends StatelessWidget {
   const TermsOfUseContent({super.key});
@@ -76,7 +77,10 @@ class TermsOfUseContent extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: ElevatedButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+              registrarConquista("Leitor Atento", "Leuu os termos de Uso");
+              Navigator.pop(context);
+            },
             child: Text('Fechar'),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 //PAGINA NA VISÃO DO PSICOLOGO
 class PerfilPacientePage extends StatelessWidget {
@@ -9,13 +10,22 @@ class PerfilPacientePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF81C7C6),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFBEE9E8),
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Color(0xFF81C7C6)),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFF81C7C6),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
+        ),
+        backgroundColor: const Color(0xFF81C7C6),
+        title: const Text(
+          'Paciente',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body: SingleChildScrollView(
@@ -61,14 +71,7 @@ class PerfilPacientePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  const Text(
-                    'Paciente ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                 
                 ],
               ),
             ),

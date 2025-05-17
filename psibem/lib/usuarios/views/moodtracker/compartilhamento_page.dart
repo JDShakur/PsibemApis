@@ -6,7 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-import 'package:psibem/psicologos/views/settings/termosdeuso.dart';
+import 'package:psibem/usuarios/views/settings/termosdeuso.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class CompartilhamentoPage extends StatefulWidget {
