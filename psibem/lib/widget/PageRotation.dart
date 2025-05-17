@@ -157,7 +157,7 @@ class _PagerotationState extends State<Pagerotation> {
   Widget _buildPsychologistPages() {
     final List<Widget> psychologistPages = [
       const HomePagePsicologo(),
-      const ListaPacientesPage(),
+      const ListaPacientePage(),
       const ProfilePsicologo(),
     ];
 

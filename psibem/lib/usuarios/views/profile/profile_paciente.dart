@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'package:psibem/psicologos/views/settings/profile_picture_selector.dart';
 import 'package:psibem/usuarios/views/conquistas/conquista.dart';
 
@@ -157,15 +158,40 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
     }
     return Scaffold(
       backgroundColor: const Color(0xFF81C7C6),
-      appBar: AppBar(
-        backgroundColor: const Color(0xFFBEE9E8),
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Color(0xFF81C7C6)),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+      appBar: AppBar(iconTheme: const IconThemeData(color: Colors.white),
+      
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFFBEE9E8),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
         ),
+        centerTitle: true,
+        title: const Text(
+          
+          'Meu Perfil',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: Color(0xFFBEE9E8),
+        elevation: 0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings, color: Color(0xFF81C7C6)),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SettingsPaciente(),
+                ),
+              );
+            },
+          ),
+        ],
+        
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -197,49 +223,21 @@ class _ProfilePacienteState extends State<ProfilePaciente> {
               ),
               child: Stack(
                 children: [
-                  const Positioned(
-                    top: 50,
-                    left: 24,
-                    child: Text(
-                      'Meu Perfil',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-
-                  // Botão de configurações
-                  Positioned(
-                    top: 50,
-                    right: 16,
-                    child: IconButton(
-                      icon: const Icon(Icons.settings,
-                          size: 37, color: Color(0xFF81C7C6)),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const SettingsPaciente(),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
+                 
+                 
 
                   // Foto e nome do usuário
                   Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(height: 100),
+                        const SizedBox(height: 70),
                         ProfilePictureSelector(
                           availablePictures: _profilePictures,
                           currentPicture:
                               _selectedProfilePicture ?? _profilePictures[2],
                           onPictureSelected: _updateProfilePicture,
-                          mainPictureSize: 120,
+                          mainPictureSize: 150,
                           accentColor: const Color(0xFF81C7C6),
                         ),
                         const SizedBox(height: 16),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //PAGINA NA VISÃO DO PSICOLOGO
 class PerfilPacientePage extends StatelessWidget {
-  const PerfilPacientePage({super.key});
+  const PerfilPacientePage({super.key, required Map<String, dynamic> paciente});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:psibem/usuarios/views/moodtracker/monitoramento_page.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -118,11 +119,23 @@ class _CalendarioState extends State<Calendario> {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F9FC),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF81C7C6),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () => Navigator.pop(context),
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: const Color(0xFF81C7C6),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
         ),
+        title: const Text(
+          'Emoções',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: const Color(0xFF81C7C6),
         elevation: 0,
       ),
       body: Stack(

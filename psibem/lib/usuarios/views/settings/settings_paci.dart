@@ -554,7 +554,12 @@ class _SettingsPacienteState extends State<SettingsPaciente> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F9FC),
-      appBar: AppBar(
+      appBar: AppBar(iconTheme: const IconThemeData(color: Color(0xFF81C7C6)),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFFF6F9FC),
+          statusBarIconBrightness: Brightness.dark,
+          statusBarBrightness: Brightness.light,
+        ),
         backgroundColor: const Color(0xFFF6F9FC),
         elevation: 0,
         title: const Padding(

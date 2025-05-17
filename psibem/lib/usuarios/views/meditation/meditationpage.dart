@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:psibem/usuarios/views/meditation/playerpage.dart';
 
 class MyApp extends StatelessWidget {
@@ -52,11 +53,28 @@ class _MeditationPageState extends State<MeditationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          systemNavigationBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
+        ),
         backgroundColor: const Color(0xFF81C7C6),
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: const Text(
+          'Meditações Guiadas',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       backgroundColor: const Color(0xFF81C7C6),
@@ -87,9 +105,10 @@ class _MeditationPageState extends State<MeditationPage> {
             const Padding(
               padding: EdgeInsets.only(top: 20, bottom: 10),
               child: Text(
-                'Meditações Guiadas',
+                textAlign: TextAlign.center,
+                'Meditações',
                 style: TextStyle(
-                  color: Color.fromARGB(255, 215, 236, 230),
+                  color: Color.fromARGB(255, 255, 255, 255),
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),

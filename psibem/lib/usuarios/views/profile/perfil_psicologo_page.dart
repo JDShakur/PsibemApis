@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //PAGINA NA VISÃO DO USUÁRIO PACIENTE
 class PerfilPsicologoPage extends StatelessWidget {
-  const PerfilPsicologoPage({super.key});
+  const PerfilPsicologoPage({super.key, required Map<String, dynamic> psicologo});
 
   // Função para exibir o modal de confirmação
   void _mostrarModalConfirmacao(BuildContext context) {

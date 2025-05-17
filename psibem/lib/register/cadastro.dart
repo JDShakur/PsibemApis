@@ -117,6 +117,7 @@ class _CadastroState extends State<Cadastro> {
         "data": dataController.text.trim(),
         "sexo": sexoController.text.trim(),
         "dataCriacao": FieldValue.serverTimestamp(),
+        "tipo": "Paciente",
       });
 
       // 3. Tentar salvar na API local (se falhar, não impede o cadastro)
@@ -500,8 +501,7 @@ class _CadastroState extends State<Cadastro> {
                                                       .size
                                                       .height *
                                                   0.9,
-                                              child:
-                                                  TermsOfUseContent(), 
+                                              child: TermsOfUseContent(),
                                             ),
                                           ),
                                         );

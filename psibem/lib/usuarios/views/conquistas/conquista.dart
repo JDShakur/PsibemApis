@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 import 'package:psibem/usuarios/views/conquistas/ModelConquista.dart';
 
 Future<List<Conquista>> buscarConquistasDoUsuario() async {
@@ -47,8 +48,9 @@ class ConquistasScreen extends StatefulWidget {
 }
 
 class _ConquistasScreenState extends State<ConquistasScreen> {
-  bool showPopup = true;
+  bool showPopup = false;
   List<Conquista> conquistasDesbloqueadas = [];
+  List<Conquista> conquistasNovas = [];
 
   @override
   void initState() {
@@ -58,8 +60,25 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
 
   Future<void> carregarConquistas() async {
     final conquistas = await buscarConquistasDoUsuario();
+
+    final novas = conquistas
+        .where((c) => !conquistasDesbloqueadas.any((old) => old.nome == c.nome))
+        .toList();
+
     setState(() {
       conquistasDesbloqueadas = conquistas;
+      showPopup = novas.isNotEmpty;
+      if (novas.isNotEmpty) {
+        conquistasNovas = novas;
+        // Fecha automaticamente após 3 segundos
+        Future.delayed(const Duration(seconds: 3), () {
+          if (mounted) {
+            setState(() {
+              showPopup = false;
+            });
+          }
+        });
+      }
     });
   }
 
@@ -83,27 +102,36 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           userData['diasConsecutivos'] >= 7,
     },
   ];
- 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFE3F7F6),
+      appBar: AppBar(
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Color(0xFF81C7C6)),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Color(0xFFE3F7F6),
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
+        ),
+        backgroundColor: const Color(0xFFE3F7F6),
+        title: const Text(
+          'Conquistas',
+          style: TextStyle(
+            fontSize: 24,
+            fontFamily: 'HelveticaNeue',
+            color: Color(0xFF81C7C6),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: Stack(
         children: [
           Column(
             children: [
-              const SizedBox(height: 60),
-              const Text(
-                "Conquistas",
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF81C7C6),
-                ),
-              ),
-              const SizedBox(height: 15),
-              Image.asset("lib/assets/images/psibi.png", height: 80),
+              const SizedBox(height: 20),
+              Image.asset("lib/assets/images/psibi.png", height: 150),
               const SizedBox(height: 10),
               Container(
                 width: MediaQuery.of(context).size.width * 0.8,
@@ -123,7 +151,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                 child: const Row(
                   children: [
                     Icon(Icons.favorite, color: Color(0xFF208584)),
-                    SizedBox(width: 5),
+                    SizedBox(width: 10),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -191,43 +219,68 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               ),
             ],
           ),
-          if (showPopup) _buildPopup(),
-        ],
-      ),
-    );
-  }
 
-  Widget _buildPopup() {
-    return Positioned(
-      top: 40,
-      right: 20,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        decoration: BoxDecoration(
-          color: const Color(0xFFF1E7CD),
-          borderRadius: BorderRadius.circular(20),
-          boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10)],
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const Icon(Icons.new_releases_rounded, color: Color(0xFF208584)),
-            const SizedBox(width: 5),
-            const Text(
-              "Nova Conquista!",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold, color: Color(0xFF208584)),
+    
+          if (showPopup)
+            Positioned(
+              top: 70,
+              right: 20,
+              child: Material(
+                elevation: 4,
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFF1E7CD),
+                    borderRadius: BorderRadius.circular(20),
+                    border:
+                        Border.all(color: const Color(0xFF208584), width: 1),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.star,
+                          color: Color(0xFF208584), size: 20),
+                      const SizedBox(width: 8),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text(
+                            "Nova conquista!",
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF208584),
+                            ),
+                          ),
+                          if (conquistasNovas.isNotEmpty)
+                            Text(
+                              conquistasNovas.first.nome,
+                              style: const TextStyle(
+                                fontSize: 10,
+                                color: Color(0xFF208584),
+                              ),
+                            ),
+                        ],
+                      ),
+                      const SizedBox(width: 8),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            showPopup = false;
+                          });
+                        },
+                        child: const Icon(Icons.close,
+                            size: 16, color: Color(0xFF208584)),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
-            IconButton(
-              icon: const Icon(Icons.close, color: Color(0xFF208584)),
-              onPressed: () {
-                setState(() {
-                  showPopup = false;
-                });
-              },
-            ),
-          ],
-        ),
+        ],
       ),
     );
   }
@@ -268,7 +321,7 @@ class _ConquistaCard extends StatelessWidget {
                 conquista.nome,
                 textAlign: TextAlign.center,
                 style:
-                    const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                    const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ],
           ),
@@ -289,7 +342,7 @@ class _ConquistaCard extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
           style: TextButton.styleFrom(
             backgroundColor: const Color(0xFF208584),
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

@@ -120,6 +120,7 @@ class _CadastroPsiState extends State<CadastroPsi> {
         "data": dataController.text.trim(),
         "sexo": sexoController.text.trim(),
         "dataCriacao": FieldValue.serverTimestamp(),
+        "tipo": "psicologo",
       });
 
       // 3. Tentar salvar na API local (se falhar, não impede o cadastro)
